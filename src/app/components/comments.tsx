@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 export default function Subscribe(){
     return(
         <>
-        <div className="pt-40 relative top-[230em] md:top-[0]">
+        <div className="pt-40 relative top-[230em] md:top-[0] mx-20">
         <Separator className="mt-20"/>
 
         <div className="place-self-center pt-5">
