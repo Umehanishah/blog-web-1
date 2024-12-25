@@ -21,13 +21,13 @@ export default function Subscribe(){
                     Drop Me a Line, Let Me Know What Your Think</h1>
                 <div>
                 
-                    <div className="container w-[300px] md:w-[1200px] place-self-center md:flex pt-10 px-10 md:px-20">
-                        <div className="container w-[400px] md:w-[600px] ">
+                    <div className="container w-[300px] md:w-[1200px] place-self-center md:flex pt-10 md:px-20">
+                        <div className="container w-[350px] md:w-[600px] ">
                     <Label htmlFor="picture" className="text-gray-500">First Name *</Label>
                     <Input type="email" placeholder="___________________________________________________________________" className="mt-2 border-none shadow-none"/>
                     </div>
 
-                    <div className="container w-[400px] md:w-[800px] ">
+                    <div className="container w-[350px] md:w-[800px] ">
                     <Label htmlFor="picture" className="text-gray-500">Last Name *</Label>
                     <Input type="email" placeholder="_____________________________________________________________" className="mt-2 border-none shadow-none"/>
                     </div>

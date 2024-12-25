@@ -2,7 +2,6 @@
 
 import { useParams } from "next/navigation";
 import Navigation from "@/app/components/navigation";
-import Footer from "@/app/components/footer";
 import Image from "next/image";
 import { useState } from "react";
 import {Button} from "@/components/ui/button";
@@ -129,7 +128,7 @@ export default function Blog() {
     <div>
       <Navigation/>
       <div className="pt-10 pb-10 mx-10 md:mx-40">
-      <div className="flex border border-black">
+      <div className="md:flex border border-black">
       {blog.image && (
           <Image
             src={blog.image}
@@ -165,9 +164,6 @@ export default function Blog() {
       </div>
 
 
-      
-      <hr/>
-      <Footer/>
     </div>
 
   );

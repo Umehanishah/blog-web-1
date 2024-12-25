@@ -40,7 +40,7 @@ export default function About() {
     return ( 
         <section>
           <Navigation/>
-            <div className="container w-[1200px] px-10 pb-10 place-self-center">
+            <div className="container md:w-[1200px] px-10 pb-10 place-self-center">
             
                     <div className="pt-14">
                     <h2 className="text-xl tracking-[.30em] pb-10 font-light">
@@ -48,7 +48,7 @@ export default function About() {
                     </div>
                 
             <div className="">
-            <div className="container w-[1200px] h-[500px]">
+            <div className="container md:w-[1200px] h-[500px]">
           {blogs.map((blog) => (
             <Link
               key={blog.id}
