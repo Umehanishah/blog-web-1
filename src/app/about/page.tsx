@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import {Button} from "@/components/ui/button";
-import Footer from "../components/footer";
 
 
   const blogs = [
@@ -95,7 +94,7 @@ export default function About() {
         </div>
 
 </div>
-<Footer/>
+
 </section>
 
     )

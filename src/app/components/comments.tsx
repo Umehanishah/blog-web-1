@@ -39,7 +39,7 @@ export default function Subscribe(){
                     <Input type="email" placeholder="______________________________________________________________________________________________________________________________________________" className="mt-2 pt-5 border-none shadow-none hidden md:block"/>
                     </div>
 
-                    <div className="container w-[450px] md:w-[1200px] pt-5  px-10 md:px-20">
+                    <div className="container w-[450px] md:w-[1200px] pt-5 px-10 md:px-20">
                     <Label htmlFor="picture" className="text-gray-500">Message...</Label>
                     <Textarea placeholder="____________________________________________" className="mt-2 border-none shadow-none block md:hidden"/>
                     <Textarea placeholder="_______________________________________________________________________________________________________________________________________________" className="mt-2 border-none shadow-none hidden md:block"/>
