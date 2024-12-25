@@ -55,7 +55,7 @@ export default function About() {
               href={`/blogs/${blog.id}`}
               className=""
             >
-              <div className="border border-black mb-10 flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300">
+              <div className="border border-black mb-10 md:flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300">
                 <Image
                   src={blog.image}
                   alt={blog.name}
