@@ -45,8 +45,9 @@ export default function Subscribe(){
                     <Textarea placeholder="_______________________________________________________________________________________________________________________________________________" className="mt-2 border-none shadow-none hidden md:block"/>
                     </div>
 
-                    <Button className="bg-indigo-600 mx-5 text-base font-light px-20 rounded-none">
+                    <Button className="bg-indigo-600 mx-5 text-base font-light px-20 place-self-center rounded-none">
                         Subscribe</Button>
+                        
                     
                 </div>
                 </div>
