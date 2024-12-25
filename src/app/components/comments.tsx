@@ -21,7 +21,7 @@ export default function Subscribe(){
                     Drop Me a Line, Let Me Know What Your Think</h1>
                 <div>
                 
-                    <div className="container w-[300px] md:w-[1400px] md:flex pt-10 px-10 md:px-20">
+                    <div className="container w-[300px] md:w-[1200px] md:flex pt-10 px-10 md:px-20">
                         <div className="container w-[400px] md:w-[800px] ">
                     <Label htmlFor="picture" className="text-gray-500">First Name *</Label>
                     <Input type="email" placeholder="___________________________________________________________________" className="mt-2 border-none shadow-none"/>
