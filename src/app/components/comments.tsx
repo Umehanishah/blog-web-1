@@ -22,7 +22,7 @@ export default function Subscribe(){
                 <div>
                 
                     <div className="container w-[300px] md:w-[1200px] md:flex pt-10 px-10 md:px-20">
-                        <div className="container w-[400px] md:w-[800px] ">
+                        <div className="container w-[400px] md:w-[600px] ">
                     <Label htmlFor="picture" className="text-gray-500">First Name *</Label>
                     <Input type="email" placeholder="___________________________________________________________________" className="mt-2 border-none shadow-none"/>
                     </div>
@@ -33,13 +33,13 @@ export default function Subscribe(){
                     </div>
                     
                     </div>
-                    <div className="container w-[450px] md:w-[1600px] pt-5 px-10 md:px-0">
+                    <div className="container w-[450px] md:w-[1200px] pt-5 px-10 md:px-0">
                     <Label htmlFor="picture" className="text-gray-500">Email *</Label>
                     <Input type="email" placeholder="_______________________________________________________________________________________________________" className="mt-2 pt-5 border-none shadow-none block md:hidden"/>
                     <Input type="email" placeholder="______________________________________________________________________________________________________________________________________________" className="mt-2 pt-5 border-none shadow-none hidden md:block"/>
                     </div>
 
-                    <div className="container w-[450px] md:w-[1600px] pt-5  px-10 md:px-0">
+                    <div className="container w-[450px] md:w-[1200px] pt-5  px-10 md:px-0">
                     <Label htmlFor="picture" className="text-gray-500">Message...</Label>
                     <Textarea placeholder="____________________________________________" className="mt-2 border-none shadow-none block md:hidden"/>
                     <Textarea placeholder="_______________________________________________________________________________________________________________________________________________" className="mt-2 border-none shadow-none hidden md:block"/>
