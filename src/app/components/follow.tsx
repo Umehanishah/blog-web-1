@@ -10,22 +10,22 @@ import { Button } from "@/components/ui/button";
 export default function Follow(){
     return(
         <>
-        <div className="relative top-[240em] md:top-[0] px-10 md:px-0 place-self-center md:place-self-auto">
-      <Separator className="container w-[400px] mt-32"/>
-                <div className="pt-14">
+        <div className="container w-[400px] md:w-[500px] lg:w-[400px] place-self-center md:place-self-auto">
+            <Separator className="container w-[400px] place-self-center mt-20"/>
+                <div className="pt-14  place-self-center">
                     <h2 className="text-xl tracking-[.30em] pb-10 font-light">
                         FOLLOW ME</h2>
                     </div>
                 
-                <div className="container w-[310px] grid grid-cols-2 gap-5 place-self-center md:place-self-auto">
-                    <Image src="/img-7.jpg" alt="img-7" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
-                    <Image src="/img-8.jpg" alt="img-8" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
-                    <Image src="/img-9.jpg" alt="img-9" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
-                    <Image src="/img-10.jpg" alt="img-10" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
-                    <Image src="/img-12.jpg" alt="img-12" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
-                    <Image src="/img-13.jpg" alt="img-13" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
-                    <Image src="/img-11.jpg" alt="img-11" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
-                    <Image src="/img-14.jpg" alt="img-14" width={150} height={50} className="container w-[150px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                <div className="container w-[400px] grid grid-cols-2 gap-5 place-self-center md:place-self-auto">
+                    <Image src="/img-7.jpg" alt="img-7" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                    <Image src="/img-8.jpg" alt="img-8" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                    <Image src="/img-9.jpg" alt="img-9" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                    <Image src="/img-10.jpg" alt="img-10" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                    <Image src="/img-12.jpg" alt="img-12" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                    <Image src="/img-13.jpg" alt="img-13" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                    <Image src="/img-11.jpg" alt="img-11" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
+                    <Image src="/img-14.jpg" alt="img-14" width={190} height={50} className="container w-[190px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300"/>
                 </div>
       
                 <Separator className="container w-[400px] mt-20"/>

@@ -1,101 +1,54 @@
-"use client";
 
-import Navigation from "@/app/components/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import {Button} from "@/components/ui/button";
+import Navigation from "@/app/components/navigation";
+import Comments from "@/app/comment/comment";
+import Footer from "@/app/components/footer";
 
-
-  const blogs = [
-    { 
-      id: 9, 
-      name: "This is Umehani, the creater of this blog website.", 
-      description: "I`m a dynamic individual with a passion for both teaching and technology. Having transitioned from a successful career in education to becoming a skilled web developer, you bring a unique blend of communication, creativity, and technical expertise to your work. Your background in computer courses has equipped you with a strong foundation, enabling you to tackle projects with confidence and precision. Currently, you’re working on innovative Node.js projects, exploring advanced concepts like implementing dark and light modes with Tailwind CSS. Your curiosity and drive to learn continually push you to new heights, making you an inspiring example of adaptability and growth.", 
-      year: "Dec 24, 2024",
-      image: "/img-10.jpg"
-    },
-    
-    
-  ];
-  
 
 export default function About() {
-
-  const [products, setProducts] = useState([
-    { id: 9, quantity: 1 },
-  ]);
-
-  // Handle adding quantity
-  const increaseQuantity = (id: number) => {
-    setProducts((prevProducts) =>
-      prevProducts.map((product) =>
-        product.id === id
-          ? { ...product, quantity: product.quantity + 1 }
-          : product
-      )
-    );
-  };
-
     return ( 
-        <section>
-          <Navigation/>
-            <div className="container md:w-[1200px] px-10 pb-10 place-self-center">
+        <>
+        <Navigation/>
+       <div className="container w-[500px] md:w-[1200px] place-self-center pt-10">
             
-                    <div className="pt-14">
-                    <h2 className="text-xl tracking-[.30em] pb-10 font-light">
-                        ABOUT ME</h2>
-                    </div>
-                
-            <div className="">
-            <div className="container md:w-[1200px] h-[500px]">
-          {blogs.map((blog) => (
-            <Link
-              key={blog.id}
-              href={`/blogs/${blog.id}`}
-              className=""
-            >
-              <div className="border border-black mb-10 md:flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300">
-                <Image
-                  src={blog.image}
-                  alt={blog.name}
-                  width={600}
-                  height={250}
-                  className=""
-                />
-                <div className="">
-                  <div className="pt-5 px-3">
-                <p className="flex gap-5 text-xs text-gray-500 font-light mt-2">{blog.year}</p>
-                <h2 className="text-xl font-bold pt-5">{blog.name}</h2>
-                <p className="text-xs text-gray-500 font-light pt-5 pb-5 leading-8 text-justify">{blog.description}</p>
-                <hr/>
-                <p className="flex gap-5 text-gray-500 text-xs font-light pt-5 pb-5 items-center">
-                    0 Views <span className="px-5"> 0 Comments</span>
-             
-              {products.map((product) => (
-            
-            <div className="flex items-center text-lg">
-                <Button className="bg-transparent shadow-none hover:bg-transparent"
-                  onClick={() => increaseQuantity(product.id)}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="red" stroke="#ff0000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-heart hover:fill-red-600"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                </Button>
-                {product.quantity}
-              </div>
-          ))}
-                </p>
-                </div>
+                <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300">
+                <div className="container  w-[500px] md:w-[1000px] h-[full] place-self-center border border-black">
+                 <div className="md:flex">
+                    <div className="container w-[500px]">
+                  <Image src="/img-10.jpg" alt="img-10" width={500} height={300}/>
+                  </div>
+                  <div className="container w-[500px]">
+                  <h2 className="pt-20 px-5 text-2xl font-serif font-light tracking-widest leading-10">Umehani, <br/> UI/UX Developer</h2>
+                  <p className="container w-[450px] pt-5 px-5 font-light text-justify tracking-wider">
+                    Hi there! I`m Umehani, a passionate UI/UX Developer and the creative mind behind this blog website. With a love for designing intuitive, user-friendly experiences and a knack for turning ideas into reality, I`ve built this platform as a space to share thoughts, stories, and inspiration with the world.</p>
+                  
+                  <div className="flex gap-5 pt-5 px-5 pb-10">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="red" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  <Link href="/comment">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-message-circle-more"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+                  </Link>
+                  </div>
+                  <hr/>
+                  </div>
+                  </div>
                
-                </div> 
-              </div>
-            </Link>
-          ))}
-        </div>
-        </div>
 
-</div>
-
-</section>
-
+                <p className="py-10 px-10 tracking-wider leading-10 text-justify font-light">
+                    As a UI/UX developer, I thrive on solving problems through design. I believe that every pixel, interaction, and animation should serve a purpose, creating seamless and enjoyable experiences for users. My journey in the world of design and development has been driven by curiosity, creativity, and a constant desire to learn and grow.
+                    This blog website is a reflection of my passion for both design and storytelling. It`s a place where I combine my technical skills with my love for writing, curating content that resonates with readers. Whether it`s sharing insights about design, exploring nostalgic themes, or simply documenting life`s little moments, this platform is my canvas to express and connect.
+                    When I`m not coding or designing, you`ll find me sketching ideas in my notebook, exploring new tools and technologies, or sipping coffee while brainstorming my next project. I`m a firm believer in the power of simplicity and the beauty of thoughtful design, and I strive to bring that philosophy into everything I create.
+                    Thank you for visiting this space and being a part of my journey. I hope you find inspiration, comfort, and joy here—just as I`ve poured my heart into building it. Let`s explore, create, and grow together!
+                    Feel free to reach out or connect with me—I`d love to hear your thoughts, feedback, or just chat about design and life.
+                    Warm regards.<br/>
+                        <span className="font-bold">Umehani, UI/UX Developer & Creator</span></p>
+                </div>
+                
+                </div>
+           </div>
+           
+           <Comments/>
+           <Footer/>
+           </>
     )
   }
