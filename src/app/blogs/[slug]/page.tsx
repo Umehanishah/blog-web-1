@@ -38,16 +38,16 @@ const blog = async (params:Params) => {
     <main>
       <Navigation/>
       
-      <div className='border border-black place-self-center mt-20'>
-      <div className="container w-[1100px] md:grid grid-cols-2">
-      <div className="container w-[500px] py-10 md:py-0">
+      <div className='container  w-[300px] md:w-[1100px] border border-black place-self-center mt-20'>
+      <div className="container  w-[300px] md:w-[1100px] place-self-center md:grid grid-cols-2">
+      <div className="container w-[300px] md:w-[500px] place-self-center sm:py-10 md:py-0">
         <Image src={urlFor(blog.image).url()} alt={ blog.name } width={600} height={600}/>
       </div>
-      <div className='container w-[500px] place-self-center'>
-        <h2 className='text-4xl font-bold pt-20 tracking-wider'>
+      <div className='container w-[250px] md:w-[500px] place-self-center'>
+        <h2 className='text-xl md:text-4xl font-bold pt-10 sm:pt-20 tracking-wider'>
           {blog.title}
           </h2>
-        <p className='container w-[400px] pt-10 mb-10 tracking-wider text-justify'> 
+        <p className='container w-[250px] md:w-[400px] pt-10 mb-10 tracking-wider text-justify'> 
           {blog.description} 
         </p>
         <hr/>
@@ -65,8 +65,8 @@ const blog = async (params:Params) => {
           </div>
 
       </div>
-      <p className='container w-[1000px] place-self-center text-base text-gray-500 text-justify py-10 px-10
-      tracking-wider leading-10'>
+      <p className='container w-[300px] md:w-[1000px] place-self-center text-xs md:text-base text-gray-500 text-justify py-10 px-10
+      tracking-wider leading-5 md:leading-10'>
           {blog.paragraph}
           </p>
       
