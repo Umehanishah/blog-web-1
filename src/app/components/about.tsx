@@ -14,7 +14,7 @@ export default function About() {
                     </div>
                 
                 <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300">
-                <div className="container w-[400px] h-[780px] border border-black">
+                <div className="container  w-[300px] sm:w-[400px] h-[780px] border border-black place-self-center md:place-self-auto">
                   <Link href="/about">
                   <Image src="/img-10.jpg" alt="img-10" width={400} height={300}/>
                   <h2 className="pt-5 px-5 text-lg font-serif font-light tracking-widest">Umehani, UI/UX Developer</h2>

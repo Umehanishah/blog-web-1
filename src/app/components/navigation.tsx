@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
     <div className="text-center place-self-center pt-10">
-        <p className="text-base md:text-xl font-light tracking-[.40em]">
+        <p className="text-base md:text-xl font-light tracking-[.40em] px-5 md:px-0">
             EVERYTHING IS POSSIBLE. NEVER STOP BEFORE SUCCESS.</p>
-        <h1 className="pt-5 text-3xl md:text-6xl font-extrabold tracking-widest font-serif">
+        <h1 className="text-center place-self-center pt-5 text-3xl md:text-6xl px-5 md:px-0 font-extrabold tracking-widest font-serif">
             Train of Thought for Success</h1>
     </div>
 
@@ -57,9 +57,9 @@ export default function Home() {
     </div>
     
 
-    <div className="block md:hidden place-self-center">
+    <div className="block md:hidden place-self-center container px-5 md:px-0">
          <div className="flex pt-10">  
-            <div className="flex gap-3 border border-black px-12 pr-48 py-2 font-light">
+            <div className="flex gap-3 border border-black px-12 md:pr-48 py-2 font-light">
                 <Link href="/search">Search... </Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
              </div>

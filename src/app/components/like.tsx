@@ -24,7 +24,7 @@ export default function Add() {
           <div >
             {blog.map((blog) => (
               <div>
-                <div className="flex items-center text-lg font-semibold bg-gray-100 rounded-3xl px-5 py-2">
+                <div className="flex items-center text-base md:text-lg font-semibold bg-gray-100 rounded-3xl px-5 py-2">
                     <Button className="px-3 bg-transparent hover:bg-transparent shadow-none"
                   onClick={() => increaseQuantity(blog.id)}
                 >

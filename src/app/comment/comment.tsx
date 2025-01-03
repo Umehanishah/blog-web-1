@@ -35,12 +35,12 @@ export default function Comment(){
     }
 
     return(
-        <div className="container w-[400px] lg:w-[1000px] place-self-center">
+        <div className="container  w-[300px] sm:w-[400px] lg:w-[1000px] place-self-center">
             <div className="pt-20">
                 <h2 className="font-bold font-sans text-2xl my-4">Comments</h2>
                     <ul className="space-y-2 list-disc pl-6 font-semibold cursor-pointer">
                       
-                    <li className="container w-[400px] lg:w-[1000px] text-justify marker font-light hover:font-semibold leading-8">
+                    <li className="container  w-[300px] sm:w-[400px] lg:w-[1000px] text-justify marker font-light hover:font-semibold leading-8">
                     Umehani: Rewind to Simpler Times is such a nostalgic and heartfelt piece! It beautifully captures the longing for a time when life felt less complicated and more genuine. The way it evokes memories of carefree days, meaningful connections, and the little joys we often overlook is truly touching. It`s a gentle reminder to pause, reflect, and cherish the simplicity that still exists around us. This resonates deeply, especially in today`s fast-paced world. Thank you for this beautiful trip down memory lane! 🕰️💛
                     </li>
                         <ul className="space-y-2 list-disc font-semibold">
@@ -55,9 +55,9 @@ export default function Comment(){
                         </ul>
                     </ul>
                 </div>
-                <div className="container w-[400px] lg:w-[1000px] place-self-center">
+                <div className="container  w-[300px] sm:w-[400px] lg:w-[1000px] place-self-center">
                 <h1 className="text-black font-bold pt-20 text-2xl font-serif tracking-wider">LEAVE A  COMMENT</h1>
-                <div className="container w-[400px] lg:w-[1000px] mt-10 space-y-10 pb-10">
+                <div className="container  w-[300px] sm:w-[400px] lg:w-[1000px] mt-10 space-y-10 pb-10">
                     <div>
                         <label htmlFor="name"  className="text-black font-serif font-bold">Name:</label>
                         <Input type="text" value={name} onChange={input} className="border-black"/>

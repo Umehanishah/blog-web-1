@@ -10,17 +10,17 @@ export default function About() {
     return ( 
         <>
         <Navigation/>
-       <div className="container w-[500px] md:w-[1200px] place-self-center pt-10">
+       <div className="container  w-[300px] sm:w-[500px] md:w-[1200px] place-self-center pt-10">
             
                 <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  duration-300">
-                <div className="container  w-[500px] md:w-[1000px] h-[full] place-self-center border border-black">
+                <div className="container w-[300px] sm:w-[500px] md:w-[1000px] h-[full] place-self-center border border-black">
                  <div className="md:flex">
-                    <div className="container w-[500px]">
+                    <div className="container  w-[300px] sm:w-[500px]">
                   <Image src="/img-10.jpg" alt="img-10" width={500} height={300}/>
                   </div>
-                  <div className="container w-[500px]">
+                  <div className="container  w-[300px] sm:w-[500px]">
                   <h2 className="pt-20 px-5 text-2xl font-serif font-light tracking-widest leading-10">Umehani, <br/> UI/UX Developer</h2>
-                  <p className="container w-[450px] pt-5 px-5 font-light text-justify tracking-wider">
+                  <p className="container  w-[300px] sm:w-[450px] pt-5 px-5 font-light text-justify tracking-wider">
                     Hi there! I`m Umehani, a passionate UI/UX Developer and the creative mind behind this blog website. With a love for designing intuitive, user-friendly experiences and a knack for turning ideas into reality, I`ve built this platform as a space to share thoughts, stories, and inspiration with the world.</p>
                   
                   <div className="flex gap-5 pt-5 px-5 pb-10">
