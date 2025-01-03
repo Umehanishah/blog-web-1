@@ -54,7 +54,6 @@ const blog = async (params:Params) => {
         
 
         <div className="flex gap-5 py-5">
-              
               <Like/>
               <Link href="/comment">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-message-circle-more"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
@@ -63,7 +62,6 @@ const blog = async (params:Params) => {
           
           <hr/>
           </div>
-
       </div>
       <p className='container w-[300px] md:w-[1000px] place-self-center text-xs md:text-base text-gray-500 text-justify py-10 px-10
       tracking-wider leading-5 md:leading-10'>
